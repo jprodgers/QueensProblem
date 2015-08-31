@@ -95,7 +95,7 @@ void displayBoard() {
         ellipse(x*boxSize + boxSize*1.5, y*boxSize + boxSize*1.5, boxSize, boxSize);
       }
     }
-    colorToggle = !colorToggle;
+    if(ySize % 2 == 0) colorToggle = !colorToggle;
   }
   fill(contrastColor);
   textAlign(CENTER, TOP);
